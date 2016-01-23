@@ -1,0 +1,69 @@
+
+\mode<presentation>
+
+\setbeamersize{text margin left=0.5cm}
+\setbeamersize{text margin right=0.5cm}
+
+\usetheme{Copenhagen}
+
+\definecolor{porange}{RGB}{243,154,9}
+\definecolor{pblue}{RGB}{14,111,169}
+\definecolor{pgreen}{RGB}{43,154,5}
+
+\setbeamercolor*{palette primary}{fg=white,bg=porange}
+\setbeamercolor*{palette quaternary}{bg=white,fg=pblue}
+
+\setbeamertemplate{itemize items}[triangle]
+\setbeamertemplate{enumerate items}[square]
+
+\setbeamercolor*{itemize item}{fg=porange}
+\setbeamercolor*{itemize subitem}{fg=pgreen}
+\setbeamercolor*{itemize subsubitem}{fg=pblue}
+\setbeamercolor*{item projected}{fg=white,bg=pblue}
+
+\setbeamercolor{secsubsec}{fg=white,bg=pgreen}
+\setbeamercolor{frametitle}{bg=white,fg=pgreen}
+
+\setbeamercolor*{block title}{fg=white,bg=pblue}
+\setbeamercolor*{block title alerted}{fg=white,bg=porange}
+\setbeamercolor*{block title example}{fg=white,bg=pgreen}
+
+
+\setbeamercolor*{caption name}{fg=pblue}
+
+\setbeamertemplate{blocks}[default]
+
+\setbeamertemplate{sections/subsections in toc}[square]
+\setbeamertemplate{subitems}[triangle]
+\setbeamercolor*{subitem projected}{bg=porange}
+\setbeamerfont*{subsection in toc}{size=\footnotesize}
+
+\setbeamertemplate{frametitle}{%
+ \vskip-3pt
+ \leavevmode
+ \hbox{%
+   \begin{beamercolorbox}[wd=\paperwidth,ht=3ex,dp=1ex]{frametitle}%
+    \raggedright\quad\large\bfseries\insertframetitle
+    \ifx\insertframesubtitle\@empty\else
+     \hfill\scriptsize\insertframesubtitle\hspace*{2em}%
+    \fi
+   \end{beamercolorbox}%
+ }%
+}%
+
+\setbeamertemplate{footline}{%
+  \leavevmode
+  \hbox{\color{pgreen}\rule{\paperwidth}{1pt}}\allowbreak
+  \hbox{\begin{beamercolorbox}[wd=\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm plus0fill,rightskip=.3cm]{author in head/foot}%
+    \bfseries
+    \usebeamerfont{author in head/foot}\insertshortauthor\ \ifx\insertshortinstitute\@empty\else(\insertshortinstitute)\fi
+	\hfill
+	    \color{porange}\insertshorttitle\hfill
+    \color{pblue}\phantom{\inserttotalframenumber\inserttotalframenumber}\llap{\insertframenumber}%/\inserttotalframenumber
+  \end{beamercolorbox}}%
+  \vskip0pt
+}
+
+\setbeamertemplate{navigation symbols}{}
+
+\mode<all>
